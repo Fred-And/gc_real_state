@@ -2,7 +2,7 @@
 <h3 align="center">A linear regression problem.</h3>
 
 <p align="center">
-  We all know that <strong> planning is the core of any successful business </strong>. Concerned about dealing with a high demand of new Real State for sale, the CEO of a Real State Company asked for a predictive algorithm that based on the historical data provided by him, could estimate the price of a real state.
+  We all know that <strong> planning is the core of any successful business </strong>. Concerned about dealing with a high demand of new properties for sale, the CEO of a Real State Company asked for a predictive algorithm that based on the historical data provided by him, could estimate the price of those properties.
 <br>
 <br>
 The first thing I did, was to check the data provided by the company and all the variables. After importing it to my notebook, I found out that I was dealing with <strong>5000 rows by 4 Columns dataset</strong> and the variables were the following:
@@ -13,7 +13,7 @@ The first thing I did, was to check the data provided by the company and all the
     <li> Distance from the drugstore
   </ul>  
 <br>
-The CEO asked for a price prediction so, since the beginning, I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the Real State prices and saw something like this:
+The CEO asked for a price prediction so, since the beginning, I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the property prices and saw something like this:
 <br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/histogram.png'>
 <br>
@@ -23,7 +23,7 @@ I had three possible variables, so, to understand better the behavior of each on
 <br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/pairplot01.png'>
 <br>
-It was not that hard to see that the <strong>Price and the Real State Area were strongly correlated</strong>, the distance from the beach was also relevant but not as much as the area. The distance from the drugstore got me to question its relevance for the model, <strong>but I'm a data scientist, not a data guesser, so let's keep it and eliminate it only if the stats tell me so.</strong>
+It was not that hard to see that the <strong>Price and the building Area were strongly correlated</strong>, the distance from the beach was also relevant but not as much as the area. The distance from the drugstore got me to question its relevance for the model, <strong>but I'm a data scientist, not a data guesser, so let's keep it and eliminate it only if the stats tell me so.</strong>
 <br>
 <br>
 Before modeling, I transformed the data using the Log Transformation aiming to achieve a normal distribution of the price and it happened.
