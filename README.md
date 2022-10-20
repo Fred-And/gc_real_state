@@ -13,9 +13,11 @@ The first thing I did, was to check the data provided by the company and all the
     <li> Distance from the drugstore
   </ul>  
 <br>
-The CEO asked for a price prediction so, since the beggining I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quicly checked the frequency distribution of the Real State prices and saw somethin like this:
+The CEO asked for a price prediction so, since the beggining I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quicly checked the frequency distribution of the Real State prices and saw something like this:
+
+<img src='https://github.com/Fred-And/linear_regression/blob/main/img/histogram.png'>
 <br>
-![alt text](img/histogram.png)
+From this moment I knew I'd have to transform the data, probably by using log.
 <br>
 I had three possible variables, so, to undesrtand better the bahavior of each variable I decided to do a Pairplot using the Seaborn Python library. The results were the following.
 
