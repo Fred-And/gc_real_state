@@ -2,10 +2,10 @@
 <h3 align="center">A linear regression problem.</h3>
 
 <p align="center">
-  We all know that <strong> planning is the core of any successful business </strong> . Concerned about dealing with a high demand of new Real State for sale, the CEO of a Real State Company asked for a predictive algorithm that based on the historical data provided by him, could estimate the price of a real state.
+  We all know that <strong> planning is the core of any successful business </strong>. Concerned about dealing with a high demand of new Real State for sale, the CEO of a Real State Company asked for a predictive algorithm that based on the historical data provided by him, could estimate the price of a real state.
 <br>
 <br>
-The first thing I did, was to check the data provided by the company and all the variables. After importing it to my notebook, I found out that I was dealing with a <strong>5000 rows by 4 Columns dataset</strong> and the variables were the following:
+The first thing I did, was to check the data provided by the company and all the variables. After importing it to my notebook, I found out that I was dealing with <strong>5000 rows by 4 Columns dataset</strong> and the variables were the following:
   <ul>
     <li> Price
     <li> Area
@@ -13,29 +13,34 @@ The first thing I did, was to check the data provided by the company and all the
     <li> Distance from the drugstore
   </ul>  
 <br>
-The CEO asked for a price prediction so, since the beginning I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the Real State prices and saw something like this:
-
+The CEO asked for a price prediction so, since the beginning, I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the Real State prices and saw something like this:
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/histogram.png'>
 <br>
 From this moment I knew I'd have to transform the data, probably by using log.
 <br>
-I had three possible variables, so, to understand better the behavior of each variable I decided to do a PairPlot using the Seaborn Python library. The results were the following.
+I had three possible variables, so, to understand better the behavior of each one, I decided to do a PairPlot using the Seaborn Python library. The results were the following.
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/pairplot01.png'>
 <br>
-It was not that hard to see that the Price and the Real State Area were strongly correlated, the distance from the beach was also relevant but not as much as the area. The distance from the drugstore got me to question it's relevance for the model, but I'm a data scientist, not data guesser, so let's keep it and eliminate it only if the stats tell me so.
+It was not that hard to see that the <strong>Price and the Real State Area were strongly correlated</strong>, the distance from the beach was also relevant but not as much as the area. The distance from the drugstore got me to question its relevance for the model, <strong>but I'm a data scientist, not a data guesser, so let's keep it and eliminate it only if the stats tell me so.</strong>
 <br>
 <br>
-Before modeling I transformed the data using the Log Transformation aiming to achieve a normal distribution of the price and it actually happened.
+Before modeling, I transformed the data using the Log Transformation aiming to achieve a normal distribution of the price and it happened.
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/histogram_normal.png'>
 <br>
 
-Now that we have the log of the price, area and distances, let's see the correlation again!
+Now that we have the log of the price, area, and distances, let's see the correlation again!
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/pairplot02.png'>
 <br>
 
 <h3>Great! let's go tho the modeling.</h3>
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/summary.png'>
-Using "statsmodels.summary()" to have a panorama of my model, I got to the scientifically got to the conclusion that the distance from the drugstore indeed wasn't relevant for my model, let's cut it out.
+<br>
+Using "statsmodels.summary()" to have a panorama of my model, I scientifically got to conclusion that the distance from the drugstore indeed wasn't relevant for my model, let's cut it out.
 <br>
 Now my independent variables look something like this:
 <ul>
@@ -43,14 +48,16 @@ Now my independent variables look something like this:
   <li> Distance from the beach
 </ul>
 <br>
-After testing the model, I got the this point:
+After testing the model, I got this point:
+<br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/pred_real.png'>
 <br>
 A few residuals but I think that's still acceptable, what about we check the residuals distribution?
 <br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/residuals.png'>
+<br>
 To be honest...way better than I expected!
-
+<br>
 More information and the code i wrote to get to all those conclusions you can find in the notebook!  
 </p>
 
