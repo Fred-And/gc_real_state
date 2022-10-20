@@ -58,7 +58,7 @@ A few residuals but I think that's still acceptable, what about we check the res
 <br>
 To be honest...way better than I expected!
 <br>
-More information and the code i wrote to get to all those conclusions you can find in the notebook!  
+More information about the code and what I did to get to all those conclusions, in the notebook!  
 </p>
 
 <h3 align="left">Connect with me on LinkedIn:</h3>
