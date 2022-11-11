@@ -5,10 +5,10 @@
 
 <p align="center">
 <br>
-  We all know that <strong> planning is the core of any successful business </strong>. Concerned about dealing with a high demand of new properties for sale, the CEO of a Real State Company asked for a predictive algorithm that based on the historical data provided by him, could estimate the price of those properties.
+  We all know that planning is the core of any successful business. Concerned about dealing with a high demand for new properties for sale, the CEO of a Real State Company asked for a predictive algorithm that, based on the data, could estimate the price of those properties.
 <br>
 <br>
-The first thing I did, was to check the data provided by the company and all the variables. After importing it to my notebook, I found out that I was dealing with <strong>5000 rows by 4 Columns dataset</strong> and the variables were the following:
+The first thing I did, was to check the data provided by the company and all the variables. After importing it to my notebook, I found out that I was dealing with 5000 rows by 4 Columns dataset. The variables were the following:
   <ul>
     <li> Price
     <li> Area
@@ -16,7 +16,7 @@ The first thing I did, was to check the data provided by the company and all the
     <li> Distance from the drugstore
   </ul>  
 <br>
-The CEO asked for a price prediction so, since the beginning, I knew that <strong>my dependent variable was the Price</strong>, the next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the property prices and saw something like this:
+The CEO asked for a price prediction, so since the beginning, I knew that my dependent variable was the price. The next step was to find the best independent variables to explain the phenomena. Before starting, I quickly checked the frequency distribution of the property prices and saw something like this:
 <br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/histogram.png'>
 <br>
@@ -43,7 +43,7 @@ Now that we have the log of the price, area, and distances, let's see the correl
 <br>
 <img src='https://github.com/Fred-And/linear_regression/blob/main/img/summary.png'>
 <br>
-Using "statsmodels.summary()" to have a panorama of my model, I scientifically got to conclusion that the distance from the drugstore indeed wasn't relevant for my model, let's cut it out.
+Using "statsmodels.summary()" to have a panorama of my model, I scientifically got to the conclusion that the distance from the drugstore indeed wasn't relevant to my model, let's cut it out.
 <br>
 Now my independent variables look something like this:
 <ul>
